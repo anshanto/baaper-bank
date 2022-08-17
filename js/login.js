@@ -1,10 +1,11 @@
+function getInputValue(inputId) {
+    const inputField = document.getElementById(inputId);
+    const inputFieldValue = inputField.vaule;
+}
 document.getElementById('login-submit').addEventListener('click', function () {
-    const emailField = document.getElementById('user-email');
-    const userEmail = emailField.vaule;
+    const userEmail = getInputValue('user-email');
     // get User Password
-    const passwordField = document.getElementById('user-password');
-    const userPassword = passwordField.vaule;
-
+    const userPassword = getInputValue('user-password');
     if (userEmail == 'sontan@bap.com' && userPassword == 'secret') {
     }
     window.location.href = 'banking.html';
